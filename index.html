@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Brock | Python Automation & Operational Systems</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        header {
+            margin-bottom: 3.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .logo-container {
+            flex-shrink: 0;
+        }
+        .logo-svg {
+            width: 72px;
+            height: 72px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 8px;
+        }
+        .header-content {
+            flex: 1;
+            min-width: 280px;
+        }
+        h1 {
+            font-size: 2.25rem;
+            margin: 0 0 0.25rem 0;
+            letter-spacing: -0.025em;
+        }
+        .tagline {
+            color: var(--accent);
+            font-size: 1.15rem;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+        p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+        section {
+            margin-bottom: 3.5rem;
+        }
+        h2 {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--text-main);
+            font-size: 1.15rem;
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: opacity 0.2s;
+            width: fit-content;
+        }
+        .cta-btn:hover {
+            opacity: 0.9;
+        }
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <!-- Sleek Modern Logo: Mouse working at a computer terminal -->
+                <svg class="logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Monitor Frame -->
+                    <rect x="8" y="12" width="36" height="26" rx="3" stroke="#38bdf8" stroke-width="2" fill="#0f172a"/>
+                    <!-- Screen Code Lines -->
+                    <path d="M13 19H23" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13 25H19" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13 31H27" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Monitor Stand -->
+                    <path d="M26 38V44H16" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="12" y1="44" x2="30" y2="44" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Stylized Mouse Working at Keyboard -->
+                    <path d="M42 42C42 38.6863 44.6863 36 48 36C51.3137 36 54 38.6863 54 42V50C54 53.3137 51.3137 56 48 56C44.6863 56 42 53.3137 42 50V42Z" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-width="2"/>
+                    <!-- Mouse Ears -->
+                    <circle cx="43" cy="34" r="3" fill="#38bdf8"/>
+                    <circle cx="53" cy="34" r="3" fill="#38bdf8"/>
+                    <!-- Keyboard Desk Line -->
+                    <line x1="34" y1="52" x2="60" y2="52" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="header-content">
+                <h1>Stephen Brock</h1>
+                <div class="tagline">Python Automation & Operational Systems</div>
+                <p>Building reproducible tools, automated data workflows, and robust property management infrastructure.</p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Core Services</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Custom Automation Engines</h3>
+                    <p>End-to-end Python scripting solutions for file traversal, data processing, and workflow automation designed for reliability and clean execution.</p>
+                </div>
+                <div class="card">
+                    <h3>Operational Workflows & PWA Dashboards</h3>
+                    <p>Designing database schemas, automated tracking systems, and Progressive Web App dashboards tailored for operational efficiency.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected Works</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Property Maintenance & Inventory System</h3>
+                    <p>An automated maintenance workflow and portfolio management framework structured to eliminate manual tracking overhead, streamline work orders, and optimize operational resource control.</p>
+                </div>
+                <div class="card">
+                    <h3>Directory Traversal & File Organizer</h3>
+                    <p>A robust CLI Python script engineered to traverse complex directory structures on external volumes, handling edge cases, error logging, and categorical sorting.</p>
+                </div>
+                <div class="card">
+                    <h3>Custom Data Parsing Pipeline</h3>
+                    <p>Streamlined data processing module built for high-accuracy extraction and validation under strict system constraints.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Get in Touch</h2>
+            <p>Have a workflow bottleneck or an automation project? Let's discuss a technical solution.</p>
+            <a href="mailto:muridae@atomicmail.io" class="cta-btn">Initialize Contact</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Stephen Brock. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
